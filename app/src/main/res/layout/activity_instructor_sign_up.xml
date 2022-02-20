@@ -74,7 +74,9 @@
         android:id="@+id/instructorRegisterButton"
         android:backgroundTint="@color/keppel"
         android:text="Register"
+        android:textColor="@color/white"
         android:layout_marginTop="30dp"
+        app:cornerRadius="10dp"
         android:layout_gravity="center"
         />
 

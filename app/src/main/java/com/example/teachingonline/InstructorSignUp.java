@@ -2,6 +2,7 @@ package com.example.teachingonline;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -31,7 +32,6 @@ public class InstructorSignUp extends AppCompatActivity {
         textInputEditTextPassword = findViewById(R.id.password);
         logintxt = findViewById(R.id.loginText);
         instBtn = findViewById(R.id.instructorRegisterButton);
-
 
         logintxt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +78,6 @@ public class InstructorSignUp extends AppCompatActivity {
                                     if(result.equals("Sign Up Success")){
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), Login.class);
-                                        startActivity(intent);
                                         finish();
                                     }else {
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();

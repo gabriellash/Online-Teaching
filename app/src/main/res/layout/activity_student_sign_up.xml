@@ -74,6 +74,8 @@
         android:id="@+id/studentRegisterButton"
         android:backgroundTint="@color/keppel"
         android:text="Register"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         />
