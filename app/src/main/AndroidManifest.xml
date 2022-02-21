@@ -3,6 +3,10 @@
     package="com.example.teachingonline">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -12,14 +16,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeachingOnline"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".Home"/>
-
+        <activity
+            android:name=".EditInstProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCourse"
+            android:exported="false" />
+        <activity android:name=".Home" />
         <activity android:name=".Dashboard" />
-
-        <activity android:name=".InstructorSignUp" android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            />
-
+        <activity
+            android:name=".InstructorSignUp"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Login"
             android:exported="true"
@@ -30,10 +37,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".StudentSignUp" android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            />
-
+        <activity
+            android:name=".StudentSignUp"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".MainActivity" />
     </application>
 

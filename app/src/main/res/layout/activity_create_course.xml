@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCourse"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Create Course"
+            android:textColor="@color/ocean_green"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Name"
+            android:textColorHint="@color/Cblue"
+            app:boxStrokeColor="@color/ocean_green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/courseNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Description"
+            android:textColorHint="@color/Cblue"
+            app:boxStrokeColor="@color/ocean_green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/courseDescInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Requirements"
+            android:textColorHint="@color/Cblue"
+            app:boxStrokeColor="@color/ocean_green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/courseReqInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Original Price"
+            android:textColorHint="@color/Cblue"
+            app:boxStrokeColor="@color/ocean_green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/courseOrgPriceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Sale Price"
+            android:textColorHint="@color/Cblue"
+            app:boxStrokeColor="@color/ocean_green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/courseSalePriceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/categorySpinner" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/languageSpinner"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ocean_green"
+            android:text="Create"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
