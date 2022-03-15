@@ -45,3 +45,5 @@ Contributors names
 Inspiration, code snippets, etc.
 * [Advanced-HttpURLConnection](https://github.com/VishnuSivadasVS/Advanced-HttpURLConnection)
 * [uclone](https://github.com/koushil-mankali/uclone)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
