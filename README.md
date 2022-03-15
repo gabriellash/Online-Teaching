@@ -15,49 +15,29 @@ The purpose of our application is designed to provide a learning environment to 
 
 ### Technical environment used
 
-The application is developed from the MVC concept using PHP.
-The MVC Architectural Pattern is divided into three layers:
-Model: which contains the business logic, and manages tasks related to data like validation, session state, and data source structure (Database: MYSQL).
+*The application is developed from the MVC concept using [PHP](https://www.php.net/)
+*The MVC Architectural Pattern is divided into three layers:
+*Model: which contains the business logic, and manages tasks related to data like validation, session state, and data source structure (Database: MYSQL).
 It also includes code used to manipulate this data and enforces business rules.
-View: which is UI layer, that holds the components visible on the screen.
+*View: which is UI layer, that holds the components visible on the screen.
 It may be buttons, images, layout, input field etc.
 It controls the way data is displayed and how the user interacts with it. It also provides ways for data gathering from the users. The technologies that are were used in views are XML and android programming [Java](https://www.java.com/en/)
-Controller: which establishes the relationship between view and model.
+*Controller: which establishes the relationship between view and model.
 It accepts requests and prepares the data for a response. When a request arrives at the server, the MVC framework dispatches it to a method into a controller based on the URL.
 
 
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
-Contributors names and contact info
+Contributors names
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+*[Gabriella Shebly](https://beacons.ai/gabz.edu)
+*Jamil Al Masry
 
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [Advanced-HttpURLConnection](https://github.com/VishnuSivadasVS/Advanced-HttpURLConnection)
+* [uclone](https://github.com/koushil-mankali/uclone)
