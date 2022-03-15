@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<p align="cenetr">
+<p align="center">
 <img src="online.png" alt="Logo" width="100" height="100">
   </a>
 </p>
