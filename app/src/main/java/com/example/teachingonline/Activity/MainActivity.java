@@ -1,14 +1,16 @@
-package com.example.teachingonline;
+package com.example.teachingonline.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EditInstProfile extends AppCompatActivity {
+import com.example.teachingonline.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_inst_profile);
+        setContentView(R.layout.activity_main);
     }
 }

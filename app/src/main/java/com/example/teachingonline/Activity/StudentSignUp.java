@@ -1,8 +1,7 @@
-package com.example.teachingonline;
+package com.example.teachingonline.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,27 +12,28 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.teachingonline.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
-public class InstructorSignUp extends AppCompatActivity {
+public class StudentSignUp extends AppCompatActivity {
 
-    TextView logintxt;
-    Button instBtn;
     TextInputEditText textInputEditTextFullname, textInputEditTextPassword,textInputEditTextEmail;
+    Button studentBtn;
+    TextView loginTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_instructor_sign_up);
+        setContentView(R.layout.activity_student_sign_up);
 
         textInputEditTextEmail = findViewById(R.id.email);
         textInputEditTextFullname = findViewById(R.id.fullname);
         textInputEditTextPassword = findViewById(R.id.password);
-        logintxt = findViewById(R.id.loginText);
-        instBtn = findViewById(R.id.instructorRegisterButton);
+        studentBtn = findViewById(R.id.studentRegisterButton);
+        loginTxt = findViewById(R.id.loginText);
 
-        logintxt.setOnClickListener(new View.OnClickListener() {
+        loginTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Login.class);
@@ -42,7 +42,8 @@ public class InstructorSignUp extends AppCompatActivity {
             }
         });
 
-        instBtn.setOnClickListener(new View.OnClickListener() {
+
+        studentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -70,14 +71,14 @@ public class InstructorSignUp extends AppCompatActivity {
                             data[0] = fullname;
                             data[1] = password;
                             data[2] = email;
-                            PutData putData = new PutData("https://192.168.1.104/OnlineT/instructor.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.105/Onlineteaching/student.php", "POST", field, data);
                             if (putData.startPut()) {
-                                HttpsTrustManager.allowAllSSL();
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();
                                     if(result.equals("Sign Up Success")){
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), Login.class);
+                                        startActivity(intent);
                                         finish();
                                     }else {
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
@@ -92,5 +93,9 @@ public class InstructorSignUp extends AppCompatActivity {
                 }
             }
         });
+
+
+
     }
+
 }

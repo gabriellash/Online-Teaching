@@ -17,18 +17,39 @@
         android:theme="@style/Theme.TeachingOnline"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".EditInstProfile"
+            android:name=".Activity.CourseContent"
             android:exported="false" />
         <activity
-            android:name=".CreateCourse"
+            android:name=".Toolbar"
             android:exported="false" />
-        <activity android:name=".Home" />
-        <activity android:name=".Dashboard" />
         <activity
-            android:name=".InstructorSignUp"
+            android:name=".Activity.StudentPayment"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StudentCourses"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Lecture"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ManageCourses"
+            android:exported="false" />
+        <activity android:name=".Activity.EnrollCourse" />
+        <activity android:name=".Activity.CourseData" />
+        <activity android:name=".Activity.CategoryCourses" />
+        <activity android:name=".Activity.AllCategories" />
+        <activity android:name=".Activity.EditInstProfile" />
+        <activity android:name=".Activity.CreateCourse" />
+        <activity android:name=".Activity.Home" />
+        <activity android:name=".Activity.Dashboard" />
+        <activity
+            android:name=".Activity.InstructorSignUp"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".Login"
+            android:name=".Activity.Login"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -38,9 +59,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StudentSignUp"
+            android:name=".Activity.StudentSignUp"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.MainActivity" />
     </application>
 
 </manifest>

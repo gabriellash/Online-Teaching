@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Mblue"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Payment History"/>
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerpayment"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Cblue"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Course Payment Details"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            android:text="Credit Card Number: " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+
+            android:id="@+id/credit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Price: "/>
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Date: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+
+            android:id="@+id/date"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

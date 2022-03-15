@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StudentProfile"
+    android:layout_margin="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/stdProfilePic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/profi" />
+
+        <Button
+            android:id="@+id/stdProfilePicBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stdProfilePic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1E6091"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Edit Picture"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stdProfilePicBtn"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:layout_marginRight="5dp"
+                    android:hint="Fullname"
+                    android:id="@+id/sname"
+                    android:fontFamily="@font/poppinsmedium"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#1E6091"
+                    android:textColor="@color/white"
+                    android:text="Save"
+                    android:onClick="editstudent"
+                    android:fontFamily="@font/poppinsbold"
+                    android:id="@+id/editStdInfo"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="20dp"
+                android:hint="Old password"
+                android:id="@+id/oldpass"
+                android:fontFamily="@font/poppinsmedium"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="textEmailAddress"
+                android:hint="New Password"
+                android:id="@+id/newpass"
+                android:fontFamily="@font/poppinsmedium"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instProfilePic"
+                android:backgroundTint="#1E6091"
+                android:textColor="@color/white"
+                android:text="Change Password"
+                android:fontFamily="@font/poppinsbold"
+                android:id="@+id/changePass"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

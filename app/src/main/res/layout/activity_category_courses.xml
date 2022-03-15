@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CategoryCourses"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="25dp"
+        android:textColor="@color/Mblue"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/categorychosen"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="20dp"
+        android:textColor="@color/Mblue"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/categorychosenfromhome"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/courseListView">
+
+    </ListView>
+
+</LinearLayout>

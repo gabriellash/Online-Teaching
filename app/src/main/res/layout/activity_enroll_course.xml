@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EnrollCourse"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enrollement"
+        android:textSize="35sp"
+        android:textColor="@color/keppel"
+        android:fontFamily="@font/poppinsbold"
+        android:id="@+id/enrollText"
+        />
+
+    <LinearLayout
+        android:id="@+id/stdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enrollText"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/studentNamePay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Student Name "
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="You are currently filling the form to enroll in: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/courseNamePay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Course Name"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Total: $  "
+                android:textColor="@color/keppel"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="end"
+                android:text="500"
+                android:id="@+id/pricecoursepay"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Student Information" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email"
+            android:textColorHint="@color/keppel"
+            app:boxStrokeColor="@color/ocean_green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEnroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Payment Information: (Credit Card)"
+            android:drawableEnd="@drawable/ic_baseline_payment_24"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="**** **** **** ****"
+            android:textColorHint="@color/keppel"
+            app:boxStrokeColor="@color/ocean_green"
+            app:helperText="Credit Card Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/creditCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card Number"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="10sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="CVV"
+
+                android:textColorHint="@color/keppel"
+                app:boxStrokeColor="@color/ocean_green">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:fontFamily="@font/poppinsmedium" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CVV Code"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/keppel"
+            android:text="Enroll"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="20sp"
+            android:id="@+id/enroolButton"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

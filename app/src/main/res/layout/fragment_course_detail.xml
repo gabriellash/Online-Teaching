@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CourseData">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/detailPic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/online"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/detailCourseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Course name"
+                    android:textColor="@color/Cblue"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Description:"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/detailDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="some course description"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"
+                android:text="Requirements:"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/detailReq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="some course requirements"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instructor: "
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/poppinsmedium"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/coursedatainst"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language: "
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:id="@+id/coursedatalang"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Org price: $   "
+                    android:textSize="20sp"
+                    android:textColor="@color/Cblue"
+                    android:fontFamily="@font/poppinsmedium"/>
+
+                <TextView
+                    android:id="@+id/detailOrgPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/enrollCourseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Enroll Now"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/Cblue"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"/>
+            <Button
+                android:id="@+id/contentCourseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:text="View Course Content"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/Cblue"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

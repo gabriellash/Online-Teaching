@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditInstProfile"
+    tools:context=".Activity.EditInstProfile"
     android:layout_marginRight="10dp"
     android:layout_marginLeft="10dp">
 
@@ -13,20 +13,22 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:src="@drawable/profi" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/instProfilePicBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/instProfilePic"
-        android:backgroundTint="#1E6091"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:text="Edit Picture"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#1E6091"
         android:fontFamily="@font/poppinsbold"
-        android:id="@+id/instProfilePicBtn"
-        android:layout_marginTop="5dp"/>
+        android:text="Edit Picture"
+        android:textColor="@color/white" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,30 +36,66 @@
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:padding="5dp">
-        <EditText
+
+
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Fullname"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Fullname"
+                android:id="@+id/iname"
+                android:fontFamily="@font/poppinsmedium"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/instProfilePic"
+                android:backgroundTint="#1E6091"
+                android:textColor="@color/white"
+                android:text="Save"
+                android:onClick="editprofile"
+                android:fontFamily="@font/poppinsbold"
+                android:id="@+id/editInstInfo"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:id="@+id/iname"
+            android:inputType="textEmailAddress"
+            android:hint="Old password"
+            android:id="@+id/opass"
             android:fontFamily="@font/poppinsmedium"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:inputType="textEmailAddress"
-            android:hint="Email"
-            android:id="@+id/iemail"
+            android:hint="New Password"
+            android:id="@+id/npass"
             android:fontFamily="@font/poppinsmedium"/>
-        <EditText
-            android:layout_width="match_parent"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:inputType="textPassword"
-            android:hint="Password"
-            android:id="@+id/ipassword"
-            android:fontFamily="@font/poppinsmedium"/>
+            android:layout_below="@id/instProfilePic"
+            android:backgroundTint="#1E6091"
+            android:textColor="@color/white"
+            android:text="Change Password"
+            android:fontFamily="@font/poppinsbold"
+            android:id="@+id/changePass"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
 
 
     </LinearLayout>
