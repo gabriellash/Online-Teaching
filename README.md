@@ -1,5 +1,10 @@
 # Online-Teaching
 
+ <img src="online.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">project_title</h3>
+
 ## Description
 
 This project was done for a university course (Android Development & Software Eng)
