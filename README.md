@@ -1,9 +1,8 @@
-# Online-Teaching
-
- <img src="online.png" alt="Logo" width="80" height="80">
+<div id="top"></div>
+<img src="online.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Online Teaching - A1 Courses </h3>
 
 ## Description
 
