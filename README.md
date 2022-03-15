@@ -1,7 +1,9 @@
 <div id="top"></div>
-<img src="online.png" alt="Logo" width="80" height="80">
-  </a>
 
+<p align="cenetr">
+<img src="online.png" alt="Logo" width="100" height="100">
+  </a>
+</p>
   <h3 align="center">Online Teaching - A1 Courses </h3>
 
 ## Description
