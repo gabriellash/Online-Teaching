@@ -21,16 +21,10 @@ As we live in a digital era, people nowadays cannot get away from technology tha
 
 ### Technical environment used
 
-* The application is developed from the MVC concept using [PHP](https://www.php.net/)
-* The MVC Architectural Pattern is divided into three layers:
-* Model: which contains the business logic, and manages tasks related to data like validation, session state, and data source structure (Database: MYSQL).
-It also includes code used to manipulate this data and enforces business rules.
-* View: which is UI layer, that holds the components visible on the screen.
-It may be buttons, images, layout, input field etc.
-It controls the way data is displayed and how the user interacts with it. It also provides ways for data gathering from the users. The technologies that are were used in views are XML and android programming [Java](https://www.java.com/en/)
-* Controller: which establishes the relationship between view and model.
-It accepts requests and prepares the data for a response. When a request arrives at the server, the MVC framework dispatches it to a method into a controller based on the URL.
-
+* PHP
+* Database: MYSQL
+* Android programming: Java
+* Xampp
 
 
 
