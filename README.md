@@ -19,6 +19,11 @@ As we live in a digital era, people nowadays cannot get away from technology tha
 
 ## Getting Started
 
+### Screens
+
+<img src="homepage.PNG" alt="Logo" width="300" height="500">
+
+
 ### Technical environment used
 
 * PHP
