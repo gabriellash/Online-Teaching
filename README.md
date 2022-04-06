@@ -24,7 +24,6 @@ As we live in a digital era, people nowadays cannot get away from technology tha
 <img src="homepage.PNG" alt="Logo" width="300" height="500">
 <figcaption>Student Homepage</figcaption>
 </figure>
-
 <figure>
 <img src="kk.PNG" alt="Logo" width="300" height="500">
 <figcaption>Instuctor Homepage</figcaption>
