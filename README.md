@@ -20,10 +20,10 @@ As we live in a digital era, people nowadays cannot get away from technology tha
 ## Getting Started
 
 ### Screens
-
+<figure>
 <img src="homepage.PNG" alt="Logo" width="300" height="500">
-
-
+<figcaption>Student Homepage</figcaption>
+</figure>
 ### Technical environment used
 
 * PHP
